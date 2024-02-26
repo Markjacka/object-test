@@ -1,0 +1,41 @@
+let person = {
+    name: 'John',
+    age: 30,
+    city: 'New York'
+};
+
+
+console.log("Person's name:", person.name);
+
+
+person.age = 35;
+
+
+person.country = 'USA';
+
+
+person.greet = function() {
+    console.log("Hello, my name is " + this.name + ".");
+};
+
+
+person.greet();
+
+
+let obj1 = { name: 'John', age: 30, city: 'New York' };
+let obj2 = { name: 'John', age: 30, city: 'New York' };
+
+console.log("Are obj1 and obj2 the same?", obj1 === obj2); 
+
+let school = {
+    name: 'ABC School',
+    students: [
+        { name: 'Alice', age: 12 },
+        { name: 'Bob', age: 11 },
+        { name: 'Charlie', age: 13 }
+    ]
+};
+
+
+console.log("First student's name:", school.students[0].name); 
+console.log("First student's age:", school.students[0].age
